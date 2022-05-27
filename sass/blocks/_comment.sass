@@ -1,0 +1,102 @@
+.comment-block
+  color: #fff
+  background-color: #292929
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    text-transform: uppercase
+    +med
+    font-size: 30px
+  &__slider-block
+    display: flex
+    grid-gap: 60px
+    align-items: center
+    margin-bottom: 100px
+    margin-top: 100px
+  &__slider-item
+    display: flex
+    grid-gap: 50px
+    align-items: center
+
+.slider-block
+  &__right-arrow
+    transform: scale(-1, 1)
+
+.slider-item
+  &__cercle-fone
+    width: 220px
+    height: 220px
+    background-image: url(../img/Display/image-cercle.png)
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &::before
+      background: rgba(13, 6, 6, 0.6)
+      content: ""
+      position: absolute
+      width: 100%
+      border-radius: 100%
+      height: 100%
+      top: 0
+      left: 0
+  &__cercle-name
+    font-size: 20px
+    z-index: 1
+    margin: 0
+    +med
+  &__cercle-subtitle
+    font-size: 18px
+    z-index: 1
+    margin: 0
+    +reg
+  &__content-review
+    width: 490px
+    +reg
+    font-size: 18px
+  &__show-img
+    color: #f24841
+    +reg
+    font-size: 18px
+    position: relative
+    transition: 0.5s
+    &:after 
+      position: absolute
+      content: ''
+      width: 300px
+      background-color: #f24841
+      height: 1px
+      bottom: -5px
+      left: 0
+      transition: 0.5s
+    &:hover
+      color: darken(#f24841, 20%)
+      transition: 0.5s
+      cursor: pointer
+      &:after 
+        height: 3px
+        transition: 0.5s
+        background-color:darken(#f24841, 20%)
+
+
+.comment-block__desription-block
+  display: flex
+  width: 950px
+  justify-content: space-between
+
+.description-block
+  &__item-img
+    height: 90px
+  &__item
+    display: flex
+    flex-direction: column
+    grid-gap: 25px
+    align-items: center
+  &__item-content
+    text-transform: uppercase
+    margin: 0
+    font-size: 20px
+    width: 270px
+    text-align: center

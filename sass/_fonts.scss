@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('../fonts/GothamPro-Light.woff') format('woff');
+  src: url('../fonts/GothamPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../fonts/GothamPro.woff') format('woff');
+  src: url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url('../fonts/GothamPro-Medium.woff') format('woff');
+  src: url('../fonts/GothamPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+@mixin lig {
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-weight: 300;
+}
+
+@mixin med {
+  font-family: 'Gotham Pro Medium', sans-serif;
+  font-weight: 500;
+}
+
+@mixin reg {
+  font-family: 'Gotham Pro Regular', sans-serif;
+  font-weight: 400;
+}
+
+
+  

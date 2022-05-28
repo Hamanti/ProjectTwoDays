@@ -1,3 +1,7 @@
+@media (max-width: 976px)
+  .flowers-block
+    display: none
+
 @media (max-width: 800px)
   .slider-item__cercle-fone
     border-radius: 50%
@@ -33,6 +37,9 @@
   .slider-block__left-arrow, .slider-block__right-arrow
     display: none
 
+  .modal-call__window, .modal-del__window
+    width: 70%
+
 @media (max-width: 678px)
   .comment-block__slider-item
     flex-direction: column
@@ -57,6 +64,39 @@
     margin: auto
   .slider-item__content-review
     text-align: center
+  
+  .header-block__right-call:hover
+    color: #ff3469
+    &::after
+      height: 1px
+      background-color:#ff3469
+  .display-block__button:hover
+    border: none
+    background-color: #ff2e55
+    color: white
+  .slider-item__show-img:hover
+    color: #f24841
+    &::after
+      height: 1px
+      background-color:#f24841
+  .set-count__symbol:hover
+    color: #fff
+  .products-item__button:hover
+    border: none
+    background-color: #f24841
+    color: #fff
+  .shop-block__all-flowers:hover
+    color: #c8413b
+    &::after
+      height: 1px
+      background-color: #f24841
+  .right-block__titles-item1:hover
+    &::after
+      height: 1px
+
+  .modal-call__window, .modal-del__window
+    width: 60%
+
 
 @media (max-width: 432px)
   .shop-block__subtitle

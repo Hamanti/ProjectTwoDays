@@ -1,0 +1,164 @@
+.modal
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  z-index: 1
+  
+
+.modal-call__window
+  z-index: 1
+  backdrop-filter: blur(16px) saturate(100%)
+  -webkit-backdrop-filter: blur(16px) saturate(100%)
+  background-color: rgba(17, 17, 17, 0.64)
+  border-radius: 12px
+  border: 1px solid rgba(255, 255, 255, 0.125)
+  width: 30%
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  align-items: center
+  position: relative
+  &-title
+    color: #fff
+    font-size: 24px
+    margin: 30px 0
+  &-button
+    backdrop-filter: blur(25px) saturate(100%)
+    -webkit-backdrop-filter: blur(25px) saturate(100%)
+    background-color: rgba(17, 17, 17, 0.64)
+    border-radius: 12px
+    color: #fff
+    +med
+    font-size: 20px
+    font-family: sans-serif
+    border-radius: 50%
+    border: 1px solid rgba(255, 255, 255, 0.125)
+    right: -50px
+    top: 0
+    position: absolute
+    height: 35px
+    width: 35px
+    transition: 0.5s
+    &:hover
+      transition: 0.5s
+      color: #ff2e55
+
+.modal-call__form
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  &-input
+    width: 80%
+    padding: 15px 0px 15px 15px
+    outline: none
+
+  &-button
+    background-color: #ff2e55
+    margin-top: 30px
+    margin-bottom: 30px
+    outline: none
+    border: none
+    color: white
+    width: 80%
+    height: 40px
+    +med
+    transition: 0.5s
+    &:hover
+      transition: 0.5s
+      background-color: rgba(0, 0, 0, 0)
+      border: 2px solid #ff2e55
+      color: #ff2e55
+
+.modal-description__window
+  width: 520px
+  position: relative
+  height: 300px
+  background-color: #f8f6f0
+  &-title
+    color: #f64f6b
+    font-size: 24px
+    +med
+    margin-top: 55px
+    margin-bottom: 30px
+    margin-left: 55px
+  &-content
+    margin: 0
+    +reg
+    font-size: 16px
+    color: #1c1c1c
+    margin-left: 55px
+    width: 400px
+  &-topimg
+    position: absolute
+    top: 0
+    right: 0
+  &-bottomimg
+    position: absolute
+    bottom: -4px
+    left: 0
+  &-button
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 0
+    right: -50px
+    background-color: rgba(0, 0, 0, 0)
+    color: #fff
+    +med
+    font-family: sans-serif
+    border-radius: 50%
+    border: 2px solid white
+    font-size: 24px
+
+.modal-del__window
+  z-index: 1
+  backdrop-filter: blur(16px) saturate(100%)
+  -webkit-backdrop-filter: blur(16px) saturate(100%)
+  background-color: rgba(17, 17, 17, 0.64)
+  border-radius: 12px
+  border: 1px solid rgba(255, 255, 255, 0.125)
+  width: 30%
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  align-items: center
+  position: relative
+  &-title
+    color: #fff
+    font-size: 24px
+    margin: 30px 0
+  &-subtitle
+    color: #fff
+    font-size: 16px
+    +reg
+    margin: 0
+    margin-bottom: 10px
+  &-number
+    color: #fff
+    font-size: 24px
+    margin: 0
+    margin-bottom: 30px
+    +med
+  &-button
+      width: 40px
+      height: 40px
+      position: absolute
+      top: 0
+      right: -50px
+      background-color: rgba(0, 0, 0, 0)
+      color: #fff
+      +med
+      font-family: sans-serif
+      border-radius: 50%
+      border: 2px solid white
+      font-size: 24px
+
+.hide__modal-call, .hide__modal-description, .hide__modal-del
+  display: none
+

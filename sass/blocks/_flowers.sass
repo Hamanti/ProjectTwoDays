@@ -120,25 +120,28 @@
       color: #f24841
 
 .set-count    
-  &__symbol
+  &__symbol-up, &__symbol-down
     +med
     font-size: 16px
     transition: 0.5s
     color: white
+    background-color: transparent
+    outline: none
+    border: none
     &:hover
       cursor: pointer
       color: #c8413b
       transition: 0.5s
   &__count-text
+    background-color: transparent
+    color: #fff
     width: 36px
     height: 36px
     border: 2px solid white
-    display: flex
-    justify-content: center
-    align-items: center
+    text-align: center
 
 
-#hidden-item
+#hidden-item, .hidden-block
   display: none
   
 

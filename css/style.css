@@ -94,6 +94,7 @@ body {
 }
 
 .header-block__right-number {
+  color: #fff;
   font-family: 'Gotham Pro Medium', sans-serif;
   font-weight: 500;
   margin: 0;
@@ -653,16 +654,19 @@ body {
   color: #f24841;
 }
 
-.set-count__symbol {
+.set-count__symbol-up, .set-count__symbol-down {
   font-family: 'Gotham Pro Medium', sans-serif;
   font-weight: 500;
   font-size: 16px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
-.set-count__symbol:hover {
+.set-count__symbol-up:hover, .set-count__symbol-down:hover {
   cursor: pointer;
   color: #c8413b;
   -webkit-transition: 0.5s;
@@ -670,21 +674,15 @@ body {
 }
 
 .set-count__count-text {
+  background-color: transparent;
+  color: #fff;
   width: 36px;
   height: 36px;
   border: 2px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
-#hidden-item {
+#hidden-item, .hidden-block {
   display: none;
 }
 
@@ -732,6 +730,7 @@ body {
 }
 
 .question-block__title-number {
+  color: #fff;
   margin: 0;
   font-family: 'Gotham Pro Regular', sans-serif;
   font-weight: 400;
@@ -1249,6 +1248,7 @@ body {
   }
   .display-block__title {
     width: auto;
+    font-size: 30px;
   }
   .products-item {
     -ms-flex-preferred-size: 40%;
@@ -1280,6 +1280,34 @@ body {
   }
   .slider-item__content-review {
     text-align: center;
+  }
+  .display-block__subtitle-flowers {
+    margin-top: 40px;
+  }
+  .comment-block__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .shop-block__title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .line {
+    margin: 50px 0;
+  }
+  .shop-block__subtitle {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .question-block__title-number {
+    font-size: 25px;
+  }
+  .question-block__title-second {
+    margin: 0;
+  }
+  .question-block__subtitle {
+    margin-top: 30px;
   }
   .header-block__right-call:hover {
     color: #ff3469;

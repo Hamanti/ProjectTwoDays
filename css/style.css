@@ -585,6 +585,8 @@ body {
 .products-item__colors-white, .products-item__colors-beige, .products-item__colors-pink, .products-item__colors-red, .products-item__colors-blue {
   width: 20px;
   height: 20px;
+  border: none;
+  outline: none;
 }
 
 .products-item__colors-white {
@@ -684,6 +686,20 @@ body {
 
 #hidden-item, .hidden-block {
   display: none;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
 }
 
 .question-block {

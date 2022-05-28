@@ -79,6 +79,8 @@
     &-white, &-beige, &-pink, &-red, &-blue
       width: 20px
       height: 20px
+      border: none
+      outline: none
     &-white
       background-color: #fff
     &-beige
@@ -145,4 +147,13 @@
   display: none
   
 
-      
+.active
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: -5px
+    left: 0px
+    width: 100%
+    height: 2px
+    background-color: #fff

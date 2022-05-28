@@ -94,3 +94,19 @@ stepperBtnDown.addEventListener('click', () => {
 
   stepperInput.value = count;
 });
+
+const buttons = document.querySelectorAll('.colorbuton')
+let doId = "1";
+
+
+
+const handleCheck = (event) =>{
+    document.getElementById(doId).classList.remove('active');
+    doId = event.target.id;
+    console.log(doId)
+    document.getElementById(event.target.id).classList.add('active');
+}
+
+buttons.forEach(button => {
+    button.addEventListener('click', handleCheck)
+})

@@ -60,12 +60,22 @@ body {
   height: 1px;
 }
 
+.section {
+  max-width: 940px;
+  width: 100vw;
+}
+
 .slick-dots li.slick-active button:before {
   color: #fff;
 }
 
 .slick-dots li button:before {
   color: #fff;
+}
+
+.href-white {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header-block {
@@ -178,7 +188,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
 }
 
 .display-block__title {

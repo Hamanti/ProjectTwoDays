@@ -25,11 +25,8 @@
 }
 
 /** Подключение стилей интерфейса **/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+/* *
+  box-sizing: border-box */
 html {
   scroll-behavior: smooth;
 }
@@ -37,10 +34,6 @@ html {
 .href {
   text-decoration: none;
   color: #000;
-}
-
-img {
-  max-width: 100%;
 }
 
 body {
@@ -67,9 +60,12 @@ body {
   height: 1px;
 }
 
-.section {
-  max-width: 940px;
-  width: 100vw;
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  color: #fff;
 }
 
 .header-block {
@@ -182,6 +178,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
 }
 
 .display-block__title {
@@ -257,45 +254,70 @@ body {
 }
 
 .flowers-slider {
-  width: 900px;
+  width: 80%;
+  margin: auto;
 }
 
 .flowers-slider__item {
+  max-width: 70px;
+  height: 70px;
   margin: 0;
-  width: 70px;
-  text-align: center;
 }
 
 .flowers-slider__item-img {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0;
+  width: 70px;
+  height: 70px;
 }
 
-.flowers-block {
+.slick-block {
   grid-gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flowers-block__arrow-right:hover {
-  cursor: pointer;
-}
-
-.flowers-block__arrow-left {
+.slick-block__arrow-right {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 
-.flowers-block__arrow-left:hover {
+.slick-block__arrow-right:hover {
   cursor: pointer;
+}
+
+.slick-block__arrow-left:hover {
+  cursor: pointer;
+}
+
+.slick__item {
+  width: 0;
+  margin: 30px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: tranparent;
+}
+
+.slick__item-img {
+  padding: 20px;
+}
+
+.slick {
+  height: 150px;
+  width: 60vw;
 }
 
 .comment-block {
@@ -1242,9 +1264,6 @@ body {
 }
 
 @media (max-width: 976px) {
-  .flowers-block {
-    display: none;
-  }
   .slider-item__content-review {
     width: 350px;
   }

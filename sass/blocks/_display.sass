@@ -63,11 +63,13 @@
 
 .display
   background-color: #292929
+  
 
 .display-block
   display: flex
   flex-direction: column
   align-items: center
+  width: 100vw
   &__title
     text-transform: uppercase
     font-size: 34px
@@ -117,27 +119,46 @@
       color: #ff2e55
       transition: 0.5s
 
-.flowers-slider
-  width: 900px
-  &__item
-    margin: 0
-    width: 70px
-    text-align: center
-  &__item-img
-    margin-right: auto
-    margin-left: auto
+.flowers-slider 
+  width: 80%
+  margin: auto
+		&__item 
+      max-width: 70px
+      height: 70px
+      margin: 0
+		&__item-img 
+      margin: 0
+      width: 70px
+      height: 70px
+      
 
-.flowers-block
+
+
+.slick-block
   grid-gap: 20px
-  justify-content: center
-  margin-top: 100px
   display: flex
+  justify-content: center
   align-items: center
   &__arrow-right
-    &:hover
-      cursor: pointer
-  &__arrow-left
     transform: scale(-1, 1)
     &:hover
       cursor: pointer
+  &__arrow-left
+    &:hover
+      cursor: pointer
   
+
+.slick__item
+  width: 0
+  margin: 30px
+  display: flex !important
+  align-items: center
+  justify-content: center
+  background-color: tranparent
+
+.slick__item-img
+  padding: 20px
+
+.slick
+  height: 150px
+  width: 60vw

@@ -14,7 +14,7 @@
   z-index: 1
   backdrop-filter: blur(16px) saturate(100%)
   -webkit-backdrop-filter: blur(16px) saturate(100%)
-  background-color: rgba(17, 17, 17, 0.64)
+  background-color: rgba(17, 17, 17, 1)
   border-radius: 12px
   border: 1px solid rgba(255, 255, 255, 0.125)
   width: 30%
@@ -30,7 +30,7 @@
   &-button
     backdrop-filter: blur(25px) saturate(100%)
     -webkit-backdrop-filter: blur(25px) saturate(100%)
-    background-color: rgba(17, 17, 17, 0.64)
+    background-color: rgba(17, 17, 17, 1)
     border-radius: 12px
     color: #fff
     +med
@@ -45,6 +45,7 @@
     width: 35px
     transition: 0.5s
     &:hover
+      cursor: pointer
       transition: 0.5s
       color: #ff2e55
 
@@ -70,12 +71,14 @@
     +med
     transition: 0.5s
     &:hover
+      cursor: pointer
       transition: 0.5s
-      background-color: rgba(0, 0, 0, 0)
+      background-color: rgba(0, 0, 0, 1)
       border: 2px solid #ff2e55
       color: #ff2e55
 
 .modal-description__window
+  transition: all 0.5s ease
   width: 520px
   position: relative
   height: 300px
@@ -120,7 +123,7 @@
   z-index: 1
   backdrop-filter: blur(16px) saturate(100%)
   -webkit-backdrop-filter: blur(16px) saturate(100%)
-  background-color: rgba(17, 17, 17, 0.64)
+  background-color: rgba(17, 17, 17, 1) 
   border-radius: 12px
   border: 1px solid rgba(255, 255, 255, 0.125)
   width: 30%
@@ -151,13 +154,15 @@
       position: absolute
       top: 0
       right: -50px
-      background-color: rgba(0, 0, 0, 0)
+      background-color: rgba(0, 0, 0, 1)
       color: #fff
       +med
       font-family: sans-serif
       border-radius: 50%
       border: 2px solid white
       font-size: 24px
+      &:hover
+        cursor: pointer
 
 .hide__modal-call, .hide__modal-description, .hide__modal-del
   display: none

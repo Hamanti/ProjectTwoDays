@@ -13,11 +13,13 @@
   </head>
   <body>
     <main>
-      <div class="display-block display">
+      <div class="display-block display" id="display">
         <header class="header-block header section">
           <div class="header-block__left">
             <div class="header-block__left-logo">
-              <img src="img/Display/logo.png" alt="" />
+              <a href="#display" style="text-decoration: none">
+                <img src="img/Display/logo.png" alt="" />
+              </a>
               <p class="header-block__left-subtitle">
                 Интернет-магазин цветов с доставкой по всей
                 <span class="red-text">России</span>
@@ -26,11 +28,18 @@
           </div>
           <!-- /.header-block__left -->
           <div class="header-block__right">
-            <p class="header-block__right-number">8 (800) 654-87-45</p>
+            <p class="header-block__right-number" onclick="toggleModalCall()">
+              8 (800) 654-87-45
+            </p>
             <p class="header-block__right-subtitle">
               Звонок по России бесплатный
             </p>
-            <p class="header-block__right-call red-text" onclick="toggleModalCall()">Заказать звонок</p>
+            <p
+              class="header-block__right-call red-text"
+              onclick="toggleModalCall()"
+            >
+              Заказать звонок
+            </p>
           </div>
           <!-- /.header-block__right -->
         </header>
@@ -170,7 +179,7 @@
                 </div>
               </div>
             </div>
-           <!--  <div class="comment-block__slider-item">
+             <div class="comment-block__slider-item">
               <div class="slider-item__cercle-fone">
                 <p class="slider-item__cercle-name">Алиса Иванова</p>
                 <p class="slider-item__cercle-subtitle">г. Ноябрьск</p>
@@ -205,7 +214,7 @@
                   Посмотреть фотографии букета
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
           <div class="slider-block__left-arrow">
             <img src="img/Display/arrow-red.png" alt="" />
@@ -256,20 +265,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <button class="products-item__colors-white colorbuton" id="1"></button>
-              <button class="products-item__colors-beige colorbuton" id="2"></button>
-              <button class="products-item__colors-pink colorbuton" id="3"></button>
-              <button class="products-item__colors-red colorbuton" id="4"></button>
-              <button class="products-item__colors-blue colorbuton" id="5"></button>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -277,20 +308,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -298,20 +351,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -319,20 +394,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -340,20 +437,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -361,20 +480,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -382,20 +523,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -403,20 +566,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item" id="hidden-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -424,20 +609,42 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
           <div class="products-item" id="hidden-item">
             <div class="products-item__image">
               <img src="img/Display/rose-product.png" alt="" />
@@ -445,23 +652,137 @@
             <p class="products-item__name-product">розы</p>
             <p class="products-item__select-text">Выберите цвет:</p>
             <div class="products-item__colors">
-              <div class="products-item__colors-white"></div>
-              <div class="products-item__colors-beige"></div>
-              <div class="products-item__colors-pink"></div>
-              <div class="products-item__colors-red"></div>
-              <div class="products-item__colors-blue"></div>
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
             </div>
             <p class="products-item__count-text">Количество:</p>
             <div class="products-item__set-count">
               <button class="set-count__symbol-down">-</button>
-              <input class="set-count__count-text" maxlength="3" type="text" value="15">
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
               <button class="set-count__symbol-up">+</button>
             </div>
-            <button class="products-item__button">В корзину</button>
-          </div>  
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
+          <div class="products-item" id="hidden-item">
+            <div class="products-item__image">
+              <img src="img/Display/rose-product.png" alt="" />
+            </div>
+            <p class="products-item__name-product">розы</p>
+            <p class="products-item__select-text">Выберите цвет:</p>
+            <div class="products-item__colors">
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
+            </div>
+            <p class="products-item__count-text">Количество:</p>
+            <div class="products-item__set-count">
+              <button class="set-count__symbol-down">-</button>
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
+              <button class="set-count__symbol-up">+</button>
+            </div>
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
+          <div class="products-item" id="hidden-item">
+            <div class="products-item__image">
+              <img src="img/Display/rose-product.png" alt="" />
+            </div>
+            <p class="products-item__name-product">розы</p>
+            <p class="products-item__select-text">Выберите цвет:</p>
+            <div class="products-item__colors">
+              <button
+                class="products-item__colors-white colorbuton"
+                id="1"
+              ></button>
+              <button
+                class="products-item__colors-beige colorbuton"
+                id="2"
+              ></button>
+              <button
+                class="products-item__colors-pink colorbuton"
+                id="3"
+              ></button>
+              <button
+                class="products-item__colors-red colorbuton"
+                id="4"
+              ></button>
+              <button
+                class="products-item__colors-blue colorbuton"
+                id="5"
+              ></button>
+            </div>
+            <p class="products-item__count-text">Количество:</p>
+            <div class="products-item__set-count">
+              <button class="set-count__symbol-down">-</button>
+              <input
+                class="set-count__count-text"
+                maxlength="3"
+                type="text"
+                value="15"
+              />
+              <button class="set-count__symbol-up">+</button>
+            </div>
+            <button class="products-item__button" onclick="toggleModalDel()">
+              В корзину
+            </button>
+          </div>
         </div>
         <div class="shop-block__all">
-          <p class="shop-block__all-flowers" onclick="showAllFlower()" id="allFlowerText">Все цветы</p>
+          <p
+            class="shop-block__all-flowers"
+            onclick="showAllFlower()"
+            id="allFlowerText"
+          >
+            Все цветы
+          </p>
           <div class="shop-block__all-arrow" id="allFlowerArrow">
             <img src="img/Display/red-arrow-down.png" alt="" />
           </div>
@@ -480,19 +801,27 @@
       <div class="info-block">
         <div class="info-block__right-block">
           <div class="right-block__titles">
-            <div class="right-block__titles-item1" onclick="toggleModalDel()">доставка</div>
-            <div class="right-block__titles-item2" onclick="toggleModalDel()">оплата</div>
+            <div class="right-block__titles-item1" onclick="toggleModalDel()">
+              доставка
+            </div>
+            <div class="right-block__titles-item2" onclick="toggleModalDel()">
+              оплата
+            </div>
           </div>
           <div class="right-block__subtitles">
             <p class="right-block__subtitle">Присоединяйтесь к нам:</p>
             <div class="right-block__image">
-              <img src="img/Display/vk-ic.png" alt="" />
+              <a href="https:/vk.com/knime" class="href">
+                <img src="img/Display/vk-ic.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
         <div class="info-block__left-block">
           <p class="left-block__title">Отдел обслуживания клиентов</p>
-          <p class="left-block__number">8 (800) 654-87-45</p>
+          <p class="left-block__number" onclick="toggleModalCall()">
+            8 (800) 654-87-45
+          </p>
           <p class="left-block__time">Ежедневно, круглосуточно.</p>
         </div>
       </div>
@@ -502,7 +831,9 @@
       <div class="footer-section">
         <div class="logo-block">
           <div class="logo-block__image">
-            <img src="img/Display//black-logo.png" alt="" />
+            <a href="#display">
+              <img src="img/Display//black-logo.png" alt="" />
+            </a>
           </div>
           <div class="logo-block__title">
             Интернет-магазин цветов с доставкой по всей
@@ -510,47 +841,78 @@
           </div>
         </div>
         <div class="design-info">
-          Дизайн сайта: <span class="undo-after">Kris Anfalova</span>
+          Дизайн сайта:
+          <span class="undo-after"
+            ><a href="https:/vk.com/knime" class="href">Kris Anfalova</a></span
+          >
         </div>
       </div>
     </footer>
 
-    <div class="modal hide__modal-call" id="modal-call">
+    <div
+      class="modal hide__modal-call animate__animated animate__fadeIn"
+      id="modal-call"
+    >
       <div class="modal-call__window">
         <h1 class="modal-call__window-title">Заказать звонок</h1>
         <form action="#" class="modal-call__form">
-          <input type="text" placeholder="Ваше имя" class="modal-call__form-input">
-          <input type="text" placeholder="Ваш номер" class="modal-call__form-input">
+          <input
+            type="text"
+            placeholder="Ваше имя"
+            class="modal-call__form-input"
+          />
+          <input
+            type="text"
+            placeholder="Ваш номер"
+            class="modal-call__form-input"
+          />
           <button class="modal-call__form-button">Заказать</button>
         </form>
-        <button class="modal-call__window-button" onclick="toggleModalCall()">&times;</button>
+        <button class="modal-call__window-button" onclick="toggleModalCall()">
+          &times;
+        </button>
       </div>
     </div>
 
-    <div class="modal hide__modal-del" id="modal-del">
+    <div
+      class="animate__animated animate__fadeIn modal hide__modal-del"
+      id="modal-del"
+    >
       <div class="modal-del__window">
         <h1 class="modal-del__window-title">Доставка и Оплата</h1>
         <div class="modal-del__window-subtitle">Подробности по номеру</div>
         <div class="modal-del__window-number">8 (800) 654-87-45</div>
-        <button class="modal-del__window-button" onclick="toggleModalDel()">&times;</button>
+        <button class="modal-del__window-button" onclick="toggleModalDel()">
+          &times;
+        </button>
       </div>
     </div>
 
-    <div class="modal hide__modal-description" id="modal-description">
+    <div
+      class="modal hide__modal-description animate__animated animate__fadeIn"
+      id="modal-description"
+    >
       <div class="modal-description__window">
         <h1 class="modal-description__window-title">Роза</h1>
         <p class="modal-description__window-content">
-          Розы - это цветы не бывало популярны. На 
-          данный момент существует несколько тысяч 
-          сортов роз . Розы это цветы, которые обладают 
-          волшебной красотой и притягательностью. 
-          Сложено много легенд о сказочной розе . Ее 
-          любят все, ну и даже преклоняются пред ней.
-          Все народы мира чествуют это прекрасное растение.
+          Розы - это цветы не бывало популярны. На данный момент существует
+          несколько тысяч сортов роз . Розы это цветы, которые обладают
+          волшебной красотой и притягательностью. Сложено много легенд о
+          сказочной розе . Ее любят все, ну и даже преклоняются пред ней. Все
+          народы мира чествуют это прекрасное растение.
         </p>
-        <div class="modal-description__window-topimg"><img src="img/Display/top-img.png" alt=""></div>
-        <div class="modal-description__window-bottomimg"><img src="img/Display/bottom-img.png" alt=""></div>
-        <button class="modal-description__window-button" onclick="toggleModalFlower()">&times;</button>
+        <div class="modal-description__window-topimg">
+          <img src="img/Display/top-img.png" alt="" />
+        </div>
+        <div class="modal-description__window-bottomimg">
+          <img src="img/Display/bottom-img.png" alt="" />
+        </div>
+        <button
+          class="modal-description__window-button"
+          onclick="toggleModalFlower()"
+        >
+          &times;
+        </button>
       </div>
     </div>
 
@@ -596,15 +958,23 @@
         });
       });
     </script>
-    <!-- <script>
+    <script>
       $(document).ready(function () {
         $(".comment-block__slider").slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           prevArrow: $(".slider-block__right-arrow"),
-          nextArrow: $(".slider-block__left-arrow")
+          nextArrow: $(".slider-block__left-arrow"),
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
         });
       });
-    </script> -->
+    </script>
   </body>
 </html>

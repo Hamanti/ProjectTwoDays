@@ -9,21 +9,28 @@
     +med
     font-size: 30px
   &__slider-block
+    width: 100%
     display: flex
     grid-gap: 60px
     align-items: center
+    justify-content: center
     margin-bottom: 100px
     margin-top: 100px
   &__slider-item
-    display: flex
+    display: flex !important
     grid-gap: 50px
     align-items: center
+  &__slider
+    max-width: 800px
+    width: 70%
+    
 
 .slider-block
   &__right-arrow
     transform: scale(-1, 1)
 
 .slider-item
+  display: flex 
   &__cercle-fone
     width: 220px
     height: 220px
@@ -76,7 +83,7 @@
       transition: 0.5s
       cursor: pointer
       &:after 
-        height: 3px
+        height: 1px
         transition: 0.5s
         background-color:darken(#f24841, 20%)
 

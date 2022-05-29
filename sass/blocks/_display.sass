@@ -2,6 +2,7 @@
   margin: auto
   
 .header-block__left
+  text-decoration: none
   &-logo
     margin-top: 54px
   &-subtitle
@@ -23,6 +24,8 @@
     margin: 0
     margin-top: 50px
     font-size: 20px
+    &:hover
+      cursor: pointer
   &-subtitle
     margin: 0
     margin-top: 7px
@@ -46,11 +49,11 @@
     &:hover
       cursor: pointer
       transition: 0.5s
-      color: darken(#d3315a, 5%)
+      color: darken(#d3315a, 10%)
       &:after 
         transition: 0.5s
-        background-color: darken(#d3315a, 5%)
-        height: 2px
+        background-color: darken(#d3315a, 10%)
+        height: 1px
         
         
 
@@ -131,6 +134,10 @@
   display: flex
   align-items: center
   &__arrow-right
+    &:hover
+      cursor: pointer
   &__arrow-left
     transform: scale(-1, 1)
+    &:hover
+      cursor: pointer
   

@@ -1,6 +1,12 @@
 @media (max-width: 976px)
   .flowers-block
     display: none
+  .slider-item__content-review
+    width: 350px
+  .slider-item__cercle-fone
+    width: 190px
+    height: 190px
+    border-radius: 50%
 
 @media (max-width: 800px)
   .slider-item__cercle-fone
@@ -22,9 +28,16 @@
     justify-content: center
   .products-item
     flex-basis: 25%
+  .slider-item__show-img
+    padding-left: 20px
+  .slider-item__content-review
+    padding-left: 20px
+    font-size: 17px
+  .comment-block__slider-item
+    grid-gap: 0
   .comment-block__slider-block
     grid-gap: 0
-    width: auto
+    width: 100vw
     justify-content: center
   .info-block
     width: auto
@@ -41,8 +54,14 @@
     width: 70%
 
 @media (max-width: 678px)
+  .slider-item__show-img
+    padding-left: 0
+  .slider-item__content-review
+    padding-left: 0
   .comment-block__slider-item
     flex-direction: column
+    width: auto
+    margin: 0 80px
   .display-block__title
     width: auto
     font-size: 30px
@@ -120,6 +139,11 @@
 
 
 @media (max-width: 432px)
+  .slider-item__show-img
+   padding: 0 30px 
+   text-align: center
+  .slider-item__content-review
+    padding: 0 30px
   .shop-block__subtitle
     width: 300px
   .products-item
